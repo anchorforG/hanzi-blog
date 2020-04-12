@@ -29,11 +29,13 @@
           </div>
         </div>
         <!-- 拼音 -->
-        <template v-for="item in itemArr">
-          <div class="alert align-self-center" :key="item">
-            <div>{{item}}</div>
-          </div>
-        </template>
+        <div class="d-flex flex-row justify-content-center">
+          <template v-for="item in itemArr">
+            <div class="alert align-self-center" :key="item">
+              <div>{{item}}</div>
+            </div>
+          </template>
+        </div>
         <p><del>tts is not work, so delete it.</del></p>
       </div>
     </div>
