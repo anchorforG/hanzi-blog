@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: './',
+  base: '/hanzi-blog',
   productionSourceMap: false
 };
   
