@@ -83,9 +83,11 @@ email: dchanin@quizlet.com
   };
 
   (function(root, factory) {
-    if (typeof define === 'function' && define.amd) {
-      return define(factory);
-    } else if (typeof exports === 'object') {
+    // if (typeof define === 'function' && define.amd) {
+    //   return define(factory);
+    // } else 
+      
+    if (typeof exports === 'object') {
       return module.exports = factory();
     } else {
       return root.PinyinConverter = factory();
