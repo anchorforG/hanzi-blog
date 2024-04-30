@@ -24,13 +24,22 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16.x'
+          
+      - name: Build 
+        run: |
+          npm install
 
       # Runs a single command using the runners shell
-      - name: Build and Deploy
+      - name: Deploy
         uses: actions/deploy-pages@v4.0.5
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: npm install && vue-cli-service build
+          BUILD_SCRIPT: vue-cli-service build
     
