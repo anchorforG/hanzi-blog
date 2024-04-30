@@ -40,6 +40,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Deploy
         uses: actions/deploy-pages@v4
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           FOLDER: build
