@@ -39,7 +39,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Deploy
-        uses: actions/deploy-pages@v4.0.5
+        uses: actions/deploy-pages@v3
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           FOLDER: build
