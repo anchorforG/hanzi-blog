@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build and Deploy
-        uses: https://github.com/anchorforG/hanzi-blog@master
+        uses: actions/deploy-pages@v4.0.5
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
