@@ -1,4 +1,4 @@
 module.exports = {
-  produuctionSourceMap: false
+  productionSourceMap: false
 };
   
