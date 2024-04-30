@@ -42,7 +42,6 @@ jobs:
         uses: actions/deploy-pages@v4.0.5
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
           FOLDER: build
           BUILD_SCRIPT: npm run build
     
