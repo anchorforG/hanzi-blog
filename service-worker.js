@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.18e164fecdf2306dbf16e5760e712a55.js"
+  "precache-manifest.8528e4d7583a0b0a6b22e657369b12af.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hanzi-blog"});
